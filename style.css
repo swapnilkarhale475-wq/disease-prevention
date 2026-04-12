@@ -1,0 +1,95 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #f0f2f5;
+    color: #333;
+    background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239C92AC' fill-opacity='0.1'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+header {
+    background: linear-gradient(to right, #4A00E0, #8E2DE2);
+    color: #fff;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.search-container {
+    width: 30%;
+}
+
+#search-input {
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+#search-button {
+    display: none; /* Hide the search button as the search is now on input */
+}
+
+#diseases, #videos {
+    background-color: transparent;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    border-bottom: 2px solid #8E2DE2;
+    padding-bottom: 0.5rem;
+    font-size: 1.8rem;
+    color: #4A00E0;
+}
+
+.disease-grid, .video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.disease-card, .video-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    text-align: left;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.disease-card:hover, .video-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+}
+
+.disease-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.disease-card h4, .video-card h4 {
+    margin-top: 1rem;
+    color: #4A00E0;
+}
+
+footer {
+    background: linear-gradient(to right, #4A00E0, #8E2DE2);
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+}
